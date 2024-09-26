@@ -1,15 +1,10 @@
 if __name__ == '__main__':
-    nums = [1, 3, 2, 3]
-    count = 0
-    for i in range(0,len(nums)):
-        print(i)
-        """if nums[i] <= nums[i]:
-            count += 1
-            
-        else: 
-            count -= 1"""
-   #print(count)
-    """if count == len(nums):
-        print(True)
-    else:
-        print(False)"""
+    nums = [1, 3, 2]
+    increasing = True
+    decreasing = True
+    for i in range(1,len(nums)):
+        if nums[i] > nums[i-1]:
+           increasing = False
+        if nums[i] < nums[i-1]:
+            decreasing = False
+    print(increasing, decreasing)
