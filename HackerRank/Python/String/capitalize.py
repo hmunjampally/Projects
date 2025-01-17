@@ -1,3 +1,6 @@
+import os
+
+
 def solve(s):
     result = ""
     for i in range(len(s)):
