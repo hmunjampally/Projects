@@ -1,9 +1,7 @@
-if __name__ == '__main__':
-    a = "1010"
-    b = "1011"
+a = "1010"
+b = "1011"
 
-    x = max(len(a), len(b))
+x = int(a, 2)+int(b,2)
 
-    for i in range(x):
-        if a[i] + b[i]:
-            print(1)
+print(x)
+print(bin(x)[2:])
